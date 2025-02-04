@@ -1,152 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website layout</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
     </style>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: "Poppins", serif;
-            background-color: grey;
-        }
+      body {
+        font-family: "Poppins", serif;
+        background-color: grey;
+      }
 
-        header {
-            position: sticky;
-            top: 0px;
-        }
+      header {
+        position: sticky;
+        top: 0px;
+      }
 
-        nav {
-            padding: 20px;
-            background-color: rgb(253, 134, 237);
-            border-bottom: 2px solid black;
-        }
+      nav {
+        padding: 20px;
+        background-color: rgb(253, 134, 237);
+        border-bottom: 2px solid black;
+      }
 
-        ul {
-            list-style: none;
-            text-align: center;
-        }
+      ul {
+        list-style: none;
+        text-align: center;
+      }
 
-        ul li {
-            margin: 0px 40px;
-            display: inline;
+      ul li {
+        margin: 0px 40px;
+        display: inline;
+      }
 
-        }
+      li a {
+        text-decoration: none;
+        color: black;
+      }
 
-        li a {
-            text-decoration: none;
-            color: black;
+      .first-sec {
+        background-color: green;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid black;
+      }
 
-        }
+      .box {
+        display: inline-block;
+        width: 450px;
+        height: 300px;
+        margin: 40px;
+        border: 2px solid black;
+      }
 
-        .first-sec {
-            background-color: green;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid black;
-        }
+      .pink {
+        background-color: rgb(242, 190, 144);
+      }
 
-        .box {
-            display: inline-block;
-            width: 450px;
-            height: 300px;
-            margin: 40px;
-            border: 2px solid black;
-        }
+      .blue {
+        background-color: rgb(16, 179, 234);
+      }
 
-        .pink {
-            background-color: rgb(242, 190, 144);
-        }
+      .second-sec {
+        background-color: black;
+        padding: 20px;
+      }
 
-        .blue {
-            background-color: rgb(16, 179, 234);
-        }
+      .overview {
+        margin: auto;
+        border-radius: 35px;
+        border: 2px solid white;
+        width: 80vw;
+        height: 155px;
+        padding: 26px;
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+      }
 
-        .second-sec {
-            background-color: black;
-            /* text-align: center; */
-            padding: 20px;
-        }
+      .logo {
+        position: fixed;
+        border-radius: 50px;
+        overflow: hidden;
+        left: 93vw;
+        bottom: 1px;
+      }
 
-        .overview {
-            margin: auto;
-            border-radius: 35px;
-            border: 2px solid white;
-            width: 80vw;
-            height: 30vh;
-            padding: 26px;
-            text-align: center;
-            color: white;
-            font-size: 2rem;
-        }
-
-        .logo {
-            position: fixed;
-            /* border: 1px solid black; */
-            border-radius: 50px;
-            overflow: hidden;
-            /* align-items: end; */
-            left: 93vw;
-            bottom: 1px;
-
-
-        }
-
-        footer {
-            background-color: white;
-            padding: 20px;
-        }
+      footer {
+        background-color: white;
+        padding: 20px;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Reviews</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </nav>
     </header>
-    <section class="first-sec">
+    <main>
+      <section class="first-sec">
         <div class="box pink"></div>
-        <div class=" box blue"></div>
+        <div class="box blue"></div>
 
-        <div class="logo"><img
-                src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png"
-                alt="" width="50px"></div>
-    </section>
-    <section class="second-sec">
-
-        <div class="overview">
-            Hello This Is Me Rafay <br> Full Stack Developer
+        <div class="logo">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png"
+            alt=""
+            width="50px"
+          />
         </div>
-    </section>
+      </section>
+      <section class="second-sec">
+        <div class="overview">
+          Hello This Is Me Rafay <br />
+          Full Stack Developer
+        </div>
+      </section>
+    </main>
     <footer>
-        <ul>
-            <li>Abdul Rafay</li>
-            <li>Web Developer</li>
-            <li>IT Specialist</li>
-        </ul>
-        <ul>
-            <li>&copy;Rafay2025</li>
-
-        </ul>
+      <ul>
+        <li>Abdul Rafay</li>
+        <li>Web Developer</li>
+        <li>IT Specialist</li>
+      </ul>
+      <ul>
+        <li>&copy;Rafay2025</li>
+      </ul>
     </footer>
-
-</body>
-
+  </body>
 </html>
